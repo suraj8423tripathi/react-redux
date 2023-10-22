@@ -24,3 +24,13 @@ Reducer : Ties the store and actions together, actually carries out the state tr
    i.e. Reducer - (previousState,action) => newState
 
 >> so redux update store when App -> dispatch(Action) -> Reducer -> Redux Store(state) -> App is subscribed so it will update
+
+<< Redux Store and its responsibility >>
+>> One store for the entire application
+
+>> Responsbility : 
+: Holds application state
+: Allows access to state via getState() method
+: Allows state to be updated via dispatch(action) method
+: Registers listeners via subscribe(listener) method
+: Handles unregistering of listeners via the function returned by subscribe(listener)
