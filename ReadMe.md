@@ -38,4 +38,8 @@ Reducer : Ties the store and actions together, actually carries out the state tr
 << Middleware >>
 >> Is the suggested way to extend Redux with custom functionality.
 >> Provides a third-party extention point between dispatching an action, and the moment it reaches the reducer.
->> Use middleware for logging,crash reporting,performing asynchronous tasks etc. 
+>> Use middleware for logging,crash reporting,performing asynchronous tasks etc.
+
+<< Async action creator >>
+>> axios : Requests to an API end point
+>> redux-thunk : Define async action creator, it is actually a middleware
