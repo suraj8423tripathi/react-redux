@@ -34,3 +34,8 @@ Reducer : Ties the store and actions together, actually carries out the state tr
 : Allows state to be updated via dispatch(action) method
 : Registers listeners via subscribe(listener) method
 : Handles unregistering of listeners via the function returned by subscribe(listener)
+
+<< Middleware >>
+>> Is the suggested way to extend Redux with custom functionality.
+>> Provides a third-party extention point between dispatching an action, and the moment it reaches the reducer.
+>> Use middleware for logging,crash reporting,performing asynchronous tasks etc. 
